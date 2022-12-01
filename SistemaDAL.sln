@@ -9,8 +9,6 @@ Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "BLL", "BLL\BLL.vbproj", "{6
 EndProject
 Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "DTO", "DTO\DTO.vbproj", "{A7370F40-5028-4298-A765-9F5851EDE0E0}"
 EndProject
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "WF", "WF\WF.vbproj", "{58D28D16-25A3-489B-A10E-C57F8D2F1503}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,10 +27,6 @@ Global
 		{A7370F40-5028-4298-A765-9F5851EDE0E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A7370F40-5028-4298-A765-9F5851EDE0E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A7370F40-5028-4298-A765-9F5851EDE0E0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{58D28D16-25A3-489B-A10E-C57F8D2F1503}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{58D28D16-25A3-489B-A10E-C57F8D2F1503}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{58D28D16-25A3-489B-A10E-C57F8D2F1503}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{58D28D16-25A3-489B-A10E-C57F8D2F1503}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
