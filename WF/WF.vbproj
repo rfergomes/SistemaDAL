@@ -29,10 +29,4 @@
     </None>
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Imagens\" />
-    <Folder Include="Dados\" />
-    <Folder Include="NovaPasta\" />
-  </ItemGroup>
-
 </Project>
