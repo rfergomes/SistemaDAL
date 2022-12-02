@@ -35,13 +35,17 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.Data.Sqlite" Version="7.0.0" />
-    <PackageReference Include="MySql.Data" Version="8.0.31" />
+    <ProjectReference Include="..\BLL\BLL.vbproj" />
+    <ProjectReference Include="..\DTO\DTO.vbproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\BLL\BLL.vbproj" />
-    <ProjectReference Include="..\DTO\DTO.vbproj" />
+    <Reference Include="MySql.Data">
+      <HintPath>..\..\..\..\Desktop\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite">
+      <HintPath>..\..\..\..\Desktop\System.Data.SQLite.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>
