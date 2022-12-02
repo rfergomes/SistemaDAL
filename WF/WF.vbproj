@@ -34,4 +34,9 @@
     <Folder Include="Dados\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.vbproj" />
+    <ProjectReference Include="..\DTO\DTO.vbproj" />
+  </ItemGroup>
+
 </Project>

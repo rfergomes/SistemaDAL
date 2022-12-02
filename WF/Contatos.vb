@@ -1,5 +1,8 @@
 ﻿
 Public Class Contatos
+    Private Sub Contatos_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        CarregaDataGrid()
+    End Sub
 
     Private Sub btNovo_Click(sender As Object, e As EventArgs) Handles btNovo.Click
         Limpar()
@@ -62,4 +65,9 @@ Public Class Contatos
         End With
     End Sub
 
+
+
+    Private Sub CarregaDataGrid()
+        Me.DataGridView1.DataSource = BLL.Contatos.GetTodosContatosDS.Tables(0)
+    End Sub
 End Class
