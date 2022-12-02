@@ -1,4 +1,4 @@
-﻿Public Class Contatos
+﻿Public Class Contato
 	Public Property Id_contato As Long
 	Public Property Nome As String
 	Public Property Telefone As String

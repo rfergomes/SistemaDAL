@@ -12,4 +12,9 @@
     <Import Include="System.Windows.Forms" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\DAL\DAL.vbproj" />
+    <ProjectReference Include="..\DTO\DTO.vbproj" />
+  </ItemGroup>
+
 </Project>
