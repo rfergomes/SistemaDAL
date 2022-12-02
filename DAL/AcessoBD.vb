@@ -4,7 +4,7 @@ Public Class AcessoBD
     Public Shared Function CriarComando(tipoAcesso As String, comandoTexto As String, comandoTipo As CommandType, listaParametros As List(Of DbParameter)) As DbCommand
         'Public Shared Function CriarComando(comandoTexto As String, comandoTipo As CommandType, listaParametros As List(Of DbParameter)) As DbCommand
 
-        ConexaoBD.getAcesso(tipoAcesso)
+        ConexaoBD.GetAcesso(tipoAcesso)
 
         Try
             'O processo de obter DbProviderFactory envolve passar informações sobre um provedor de dados

@@ -3,27 +3,30 @@
 Public Class ConexaoBD
     Shared _connectionString As String
     Shared _providerName As String
-
-    Public Shared Sub getAcesso(ByVal tipoAcesso As String)
+    ''' <summary>
+    ''' Busca a cadeia de coneão do banco selecionado
+    ''' </summary>
+    ''' <param name="Banco"></param>
+    Public Shared Sub GetAcesso(Optional ByVal Banco As String = "")
+        Dim BD As String = IIf(Banco <> "", Banco, ConfigurationManager.AppSettings("BancoPadrao").ToString)
         Try
-            Select Case tipoAcesso
-                Case "MySQL"
-                    _connectionString = ConfigurationManager.ConnectionStrings("MySQLConnectionString").ConnectionString
-                    _providerName = ConfigurationManager.ConnectionStrings("MySQLConnectionString").ProviderName
-                Case "SQLServer"
-                    _connectionString = ConfigurationManager.ConnectionStrings("SQLServerConnectionString").ConnectionString
-                    _providerName = ConfigurationManager.ConnectionStrings("SQLServerConnectionString").ProviderName
-            End Select
+            _connectionString = ConfigurationManager.ConnectionStrings(BD).ConnectionString
+            _providerName = ConfigurationManager.ConnectionStrings(BD).ProviderName
         Catch ex As Exception
-            Throw New Exception("Erro ao acessar a string de conexão")
+            Throw New Exception("Erro na cadeia de conexão do banco " & BD)
         End Try
-
     End Sub
-
+    ''' <summary>
+    ''' ConnectionString
+    ''' </summary>
+    ''' <returns>ConnectionString</returns>
     Public Shared Function ConnectionString() As String
         Return _connectionString
     End Function
-
+    ''' <summary>
+    ''' ProviderName
+    ''' </summary>
+    ''' <returns>ProviderName</returns>
     Public Shared Function ProviderName() As String
         Return _providerName
     End Function
