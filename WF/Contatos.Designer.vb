@@ -23,7 +23,6 @@ Partial Class Contatos
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
-        Me.ToolStripProgressBar1 = New System.Windows.Forms.ToolStripProgressBar()
         Me.ToolStripStatusLabel1 = New System.Windows.Forms.ToolStripStatusLabel()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.Panel1 = New System.Windows.Forms.Panel()
@@ -54,6 +53,7 @@ Partial Class Contatos
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.ToolStripStatusLabel2 = New System.Windows.Forms.ToolStripStatusLabel()
         Me.StatusStrip1.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
@@ -65,28 +65,24 @@ Partial Class Contatos
         '
         'StatusStrip1
         '
-        Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripProgressBar1, Me.ToolStripStatusLabel1})
-        Me.StatusStrip1.Location = New System.Drawing.Point(0, 428)
+        Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripStatusLabel1, Me.ToolStripStatusLabel2})
+        Me.StatusStrip1.Location = New System.Drawing.Point(0, 488)
         Me.StatusStrip1.Name = "StatusStrip1"
         Me.StatusStrip1.Size = New System.Drawing.Size(800, 22)
         Me.StatusStrip1.TabIndex = 0
         Me.StatusStrip1.Text = "StatusStrip1"
         '
-        'ToolStripProgressBar1
-        '
-        Me.ToolStripProgressBar1.Name = "ToolStripProgressBar1"
-        Me.ToolStripProgressBar1.Size = New System.Drawing.Size(100, 16)
-        '
         'ToolStripStatusLabel1
         '
+        Me.ToolStripStatusLabel1.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.ToolStripStatusLabel1.Name = "ToolStripStatusLabel1"
-        Me.ToolStripStatusLabel1.Size = New System.Drawing.Size(47, 17)
-        Me.ToolStripStatusLabel1.Text = "Usuário"
+        Me.ToolStripStatusLabel1.Size = New System.Drawing.Size(95, 17)
+        Me.ToolStripStatusLabel1.Text = "Usuário logado: "
         '
         'DataGridView1
         '
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(12, 161)
+        Me.DataGridView1.Location = New System.Drawing.Point(9, 205)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowTemplate.Height = 25
         Me.DataGridView1.Size = New System.Drawing.Size(776, 246)
@@ -113,9 +109,9 @@ Partial Class Contatos
         Me.Panel1.Controls.Add(Me.Label3)
         Me.Panel1.Controls.Add(Me.Label2)
         Me.Panel1.Controls.Add(Me.Label1)
-        Me.Panel1.Location = New System.Drawing.Point(12, 12)
+        Me.Panel1.Location = New System.Drawing.Point(9, 12)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(776, 154)
+        Me.Panel1.Size = New System.Drawing.Size(779, 187)
         Me.Panel1.TabIndex = 2
         '
         'Panel5
@@ -123,7 +119,7 @@ Partial Class Contatos
         Me.Panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Panel5.Controls.Add(Me.Label13)
         Me.Panel5.Controls.Add(Me.Label14)
-        Me.Panel5.Location = New System.Drawing.Point(487, 100)
+        Me.Panel5.Location = New System.Drawing.Point(487, 126)
         Me.Panel5.Name = "Panel5"
         Me.Panel5.Size = New System.Drawing.Size(63, 48)
         Me.Panel5.TabIndex = 18
@@ -155,7 +151,7 @@ Partial Class Contatos
         Me.Panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Panel4.Controls.Add(Me.Label11)
         Me.Panel4.Controls.Add(Me.Label12)
-        Me.Panel4.Location = New System.Drawing.Point(562, 99)
+        Me.Panel4.Location = New System.Drawing.Point(562, 125)
         Me.Panel4.Name = "Panel4"
         Me.Panel4.Size = New System.Drawing.Size(63, 48)
         Me.Panel4.TabIndex = 17
@@ -187,7 +183,7 @@ Partial Class Contatos
         Me.Panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Panel3.Controls.Add(Me.Label9)
         Me.Panel3.Controls.Add(Me.Label10)
-        Me.Panel3.Location = New System.Drawing.Point(637, 98)
+        Me.Panel3.Location = New System.Drawing.Point(637, 124)
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(63, 48)
         Me.Panel3.TabIndex = 16
@@ -219,7 +215,7 @@ Partial Class Contatos
         Me.Panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Panel2.Controls.Add(Me.Label8)
         Me.Panel2.Controls.Add(Me.Label7)
-        Me.Panel2.Location = New System.Drawing.Point(712, 98)
+        Me.Panel2.Location = New System.Drawing.Point(712, 124)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(63, 48)
         Me.Panel2.TabIndex = 15
@@ -248,7 +244,7 @@ Partial Class Contatos
         '
         'btCancelar
         '
-        Me.btCancelar.Location = New System.Drawing.Point(170, 116)
+        Me.btCancelar.Location = New System.Drawing.Point(170, 142)
         Me.btCancelar.Name = "btCancelar"
         Me.btCancelar.Size = New System.Drawing.Size(75, 23)
         Me.btCancelar.TabIndex = 14
@@ -257,7 +253,7 @@ Partial Class Contatos
         '
         'btSalvar
         '
-        Me.btSalvar.Location = New System.Drawing.Point(84, 116)
+        Me.btSalvar.Location = New System.Drawing.Point(84, 142)
         Me.btSalvar.Name = "btSalvar"
         Me.btSalvar.Size = New System.Drawing.Size(75, 23)
         Me.btSalvar.TabIndex = 13
@@ -268,8 +264,10 @@ Partial Class Contatos
         '
         Me.txtId.Location = New System.Drawing.Point(698, 16)
         Me.txtId.Name = "txtId"
+        Me.txtId.PlaceholderText = "0"
         Me.txtId.Size = New System.Drawing.Size(75, 23)
         Me.txtId.TabIndex = 12
+        Me.txtId.TabStop = False
         Me.txtId.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label6
@@ -284,7 +282,7 @@ Partial Class Contatos
         '
         'txtPesquisar
         '
-        Me.txtPesquisar.Location = New System.Drawing.Point(65, 11)
+        Me.txtPesquisar.Location = New System.Drawing.Point(3, 34)
         Me.txtPesquisar.Name = "txtPesquisar"
         Me.txtPesquisar.Size = New System.Drawing.Size(242, 23)
         Me.txtPesquisar.TabIndex = 10
@@ -293,7 +291,7 @@ Partial Class Contatos
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label5.Location = New System.Drawing.Point(3, 19)
+        Me.Label5.Location = New System.Drawing.Point(3, 16)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(59, 15)
         Me.Label5.TabIndex = 9
@@ -301,7 +299,7 @@ Partial Class Contatos
         '
         'btNovo
         '
-        Me.btNovo.Location = New System.Drawing.Point(3, 116)
+        Me.btNovo.Location = New System.Drawing.Point(3, 142)
         Me.btNovo.Name = "btNovo"
         Me.btNovo.Size = New System.Drawing.Size(75, 23)
         Me.btNovo.TabIndex = 8
@@ -310,7 +308,7 @@ Partial Class Contatos
         '
         'txtEmail
         '
-        Me.txtEmail.Location = New System.Drawing.Point(509, 64)
+        Me.txtEmail.Location = New System.Drawing.Point(509, 82)
         Me.txtEmail.Name = "txtEmail"
         Me.txtEmail.Size = New System.Drawing.Size(264, 23)
         Me.txtEmail.TabIndex = 7
@@ -319,7 +317,7 @@ Partial Class Contatos
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label4.Location = New System.Drawing.Point(509, 46)
+        Me.Label4.Location = New System.Drawing.Point(509, 64)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(36, 15)
         Me.Label4.TabIndex = 6
@@ -327,21 +325,21 @@ Partial Class Contatos
         '
         'txtCelular
         '
-        Me.txtCelular.Location = New System.Drawing.Point(380, 64)
+        Me.txtCelular.Location = New System.Drawing.Point(380, 82)
         Me.txtCelular.Name = "txtCelular"
         Me.txtCelular.Size = New System.Drawing.Size(123, 23)
         Me.txtCelular.TabIndex = 5
         '
         'txtTelefone
         '
-        Me.txtTelefone.Location = New System.Drawing.Point(251, 64)
+        Me.txtTelefone.Location = New System.Drawing.Point(251, 82)
         Me.txtTelefone.Name = "txtTelefone"
         Me.txtTelefone.Size = New System.Drawing.Size(123, 23)
         Me.txtTelefone.TabIndex = 4
         '
         'txtNome
         '
-        Me.txtNome.Location = New System.Drawing.Point(3, 64)
+        Me.txtNome.Location = New System.Drawing.Point(3, 82)
         Me.txtNome.Name = "txtNome"
         Me.txtNome.Size = New System.Drawing.Size(242, 23)
         Me.txtNome.TabIndex = 3
@@ -350,7 +348,7 @@ Partial Class Contatos
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label3.Location = New System.Drawing.Point(380, 46)
+        Me.Label3.Location = New System.Drawing.Point(380, 64)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(45, 15)
         Me.Label3.TabIndex = 2
@@ -360,7 +358,7 @@ Partial Class Contatos
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label2.Location = New System.Drawing.Point(251, 46)
+        Me.Label2.Location = New System.Drawing.Point(251, 64)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(56, 15)
         Me.Label2.TabIndex = 1
@@ -370,17 +368,23 @@ Partial Class Contatos
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label1.Location = New System.Drawing.Point(3, 46)
+        Me.Label1.Location = New System.Drawing.Point(3, 64)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(41, 15)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Nome"
         '
+        'ToolStripStatusLabel2
+        '
+        Me.ToolStripStatusLabel2.Name = "ToolStripStatusLabel2"
+        Me.ToolStripStatusLabel2.Size = New System.Drawing.Size(78, 17)
+        Me.ToolStripStatusLabel2.Text = "Rodrigo Lima"
+        '
         'Contatos
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(800, 510)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.StatusStrip1)
@@ -401,7 +405,6 @@ Partial Class Contatos
     End Sub
 
     Friend WithEvents StatusStrip1 As StatusStrip
-    Friend WithEvents ToolStripProgressBar1 As ToolStripProgressBar
     Friend WithEvents ToolStripStatusLabel1 As ToolStripStatusLabel
     Friend WithEvents DataGridView1 As DataGridView
     Friend WithEvents Panel1 As Panel
@@ -432,4 +435,5 @@ Partial Class Contatos
     Friend WithEvents Panel3 As Panel
     Friend WithEvents Label9 As Label
     Friend WithEvents Label10 As Label
+    Friend WithEvents ToolStripStatusLabel2 As ToolStripStatusLabel
 End Class
